@@ -1,0 +1,31 @@
+{
+  "name": "coubtube",
+  "version": "1.0.0",
+  "description": "Getting coubs, generating videos and uploading them to Youtube",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saintiago/coubtube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saintiago/coubtube/issues"
+  },
+  "homepage": "https://github.com/saintiago/coubtube#readme",
+  "dependencies": {
+    "coub-dl": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.10",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}
